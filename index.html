@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivani's Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- main start -->
+    <nav>
+        <div id="n-1">
+            <i class="ri-menu-fill"></i>
+            <!-- <div class="line"></div>
+            <div class="line line1"></div>
+            <div class="line"></div> -->
+            <!-- <i class="ri-menu-line"></i> -->
+        </div>
+        <div id="n-2">
+            <h1>Hotel odisej</h1>
+            <p>mljet</p>
+        </div>
+        <div id="n-3">
+            <button>Online-check-in</button>
+            <button class="btn">Book now</button>
+        </div>
+    </nav>
+    <div id="main">
+        <!-- main end -->
+        <!-- page-1 -->
+        <div id="page1">
+            <img src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/209/ALH_Odisej_exterior_aerial_07-scaled-1920x0.jpg" alt="">
+            
+        </div>
+
+        <!-- page2 -->
+        <div id="page2">
+            <div id="center">
+                <img src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0idS1pY29uIHUtaWNvbi0tc2hhcGUtMSBqcy1iZy1zaGFwZS1hbmltYXRpb24tc3ZnIiB2aWV3Qm94PSIwIDAgMTM5NyA3MTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InNoYXBlMSIgeDE9IjQuMDAwMDgiIHkxPSIzNDEuNSIgeDI9IjAiIHkyPSIyNzMuNjI4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiM2NjcyNTAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNTM1RDQxIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNODQzLjYyIDQwMy4xOTNDODM3LjkzMyAzNjAuMTg3IDgxNy41MDUgMjk2LjE1NCA2OTkuMzY4IDMxOC41NTdDNjQ5LjQ0OCAzMjguMDI0IDYwOC40NjUgMzY5LjYxNyA1NjQuMjQ1IDQxNC40OTVDNTAzLjgxOCA0NzUuODIxIDQzNy4zNDcgNTQzLjI4MiAzMzMuNzY0IDU0My4yODJDMzEzLjcxNSA1NDMuMjgyIDI5My44MTkgNTM3Ljg3NSAyNzQuMzA3IDUzMy45MTZDMjMzLjI4OSA1MjUuMTcyIDE4Ni4xNTYgNTE1LjEyNSAxNTMuNDQ5IDUyNy4xMDFDMTM0LjIgNTM0LjE1IDExNi44NjcgNTY0LjA4NSA5Ni44NzExIDU5OC42MkM3Mi45NTY2IDY0MS4xMzUgNDUuMTY3MiA2OTEuMTUxIDAgNzE0LjIxTDAgMEgxMzMuOTg0QzUwLjg2MDcgMTAyLjA5IDIwMy40MjMgMjQyLjUxIDMwNi41IDEzNC41QzMzMC45NjcgMTA4Ljg2MiAzNTMuMjggNjUuNDE5NSAzNzcuNDk4IDE4LjI2OTVDMzgwLjU5OSAxMi4yMzA2IDM4My43MzIgNi4xMzA4OSAzODYuOTA1IDBIMTM0MS40MUMxMzQ2Ljg3IDI0LjIyMzIgMTM0OS43NSA0OS40MjI2IDEzNDkuNzUgNzUuMjk0OUMxMzQ5Ljc1IDExNC41NzEgMTMyNi41NSAxNDYuMTE5IDEzMDMuNjcgMTc3LjI0OUMxMjc1Ljg5IDIxNS4wMzQgMTI0OC41NyAyNTIuMjAzIDEyNjMuNzIgMzAxLjgyOEMxMjczLjg5IDMzNS4xNDUgMTMwNC41MiAzNTAuMjIzIDEzMzMuODUgMzY0LjY2M0MxMzY2LjIyIDM4MC41OTIgMTM5NyAzOTUuNzQ1IDEzOTcgNDMzLjc1M0MxMzk3IDUwNi42MTcgMTMzNy45OCA1NjUuNjg1IDEyNjUuMTggNTY1LjY4NUMxMjE5LjAxIDU2NS42ODUgMTIwNi43NCA1NzYuODg3IDEyMTEuNzEgNjAwLjUzNUMxMjEzLjg4IDYxMC44NjUgMTIxOC4xOSA2MTYuMDggMTIyMi4zNiA2MjEuMTE5QzEyMjkuNSA2MzAuMDQ2IDEyMzIuODUgNjM4LjY3NiAxMjMyLjg1IDY1MC4zMjFDMTIzMi44NSA2ODYuMDY2IDEyMDMuOSA3MTUuMDQzIDExNjguMTkgNzE1LjA0M0MxMTMyLjQ3IDcxNS4wNDMgMTEwMy41MiA2ODYuMDY2IDExMDMuNTIgNjUwLjMyMUMxMTAzLjUyIDYyNC44NCAxMDk0Ljk5IDYyNC42MzMgMTA3Ni4wOSA2MjQuMTc0QzEwNzEuMDEgNjI0LjA1MSAxMDY1LjE3IDYyMy45MDkgMTA1OC41NSA2MjMuMjUyQzEwMjcuMSA2MjAuMTMgMTAxMi4yOCA2MDcuMDI3IDk5Ny4yNDcgNTkzLjczNkM5NzYuNTE4IDU3NS40MTEgOTU1LjM4NSA1NTYuNzI5IDg4OS43MyA1NjMuMzU4Qzg1NC4wMTYgNTYzLjM1OCA4MTcuNTA1IDU0NC4xNzYgODE3LjUwNSA1MDguNDMyQzgxNy41MDUgNDkyLjUzNSA4MjMuNzk1IDQ3OC40NjkgODMwLjI4IDQ2My45NjdDODM4LjM3NyA0NDUuODYxIDg0Ni43NzggNDI3LjA3MyA4NDMuNjIgNDAzLjE5M1oiIGZpbGw9InVybCgjc2hhcGUxKSIvPgo8L3N2Zz4=" alt="">
+            </div>
+            <div id="text-container">
+                <h1>
+                    Set within the
+                    verdant pine and
+                    oak tree forest of
+                    Mljet National Park,
+                    Hotel Odisej Mljet is
+                    just two hours by
+                    passenger or car
+                    ferry from
+                    Dubrovnik.
+                    Set within the
+                    verdant pine and
+                    oak tree forest of
+                    Mljet National Park,
+                    Hotel Odisej Mljet is
+                    just two hours by
+                    passenger or car
+                    ferry from
+                    Dubrovnik.</h1>
+                
+
+            </div>
+        </div>
+
+        <!-- page3 -->
+        <div id="page3">
+            <div id="text-p-3">
+                <h1>Sweeping view of the
+                    Adriatic in your Room
+                </h1>
+            </div>
+            <div id="image-container">
+                <div id="left">
+                    <p>Many rooms have balconies that beckon you to breathe in the pure Mediterranean air of the island. All rooms are air conditioned and feature an elegant ensuite bathroom with shower.</p>
+                    <div id="cont-btn">
+                        <p>Explore Rooms <i class="ri-arrow-right-line"></i></p>
+                    </div>
+                    <div id="card-left">
+                        <img src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/211/ALH_Odisej_Rosemary_suite_05-scaled-800x0.jpg" alt="">
+                    </div>
+                </div>
+                <div id="right">
+                    <div id="big" class="card-right">
+                        <img src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/213/ALH_Odisej_deluxe_seaview_balcony_double_01-scaled-800x0.jpg" alt="">
+                    </div>
+                    <div id="s" class="card-right small">
+                        <img src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/215/ALH_Odisej_deluxe_seaview_balcony_double_02-scaled-800x0.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page4 -->
+        <div id="page4">
+            <div class="wrap-container">
+                <div class="wrap-card">
+                    <div class="image">
+                        <img src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/215/ALH_Odisej_deluxe_seaview_balcony_double_02-scaled-800x0.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>Classic room</h2>
+                        <p>confortable rooms with impressive views</p>
+                    </div>
+                    <div class="btnn">
+                        <button>01</button>
+                    </div>
+                </div>
+                <div class="wrap-card">
+                    <!-- <img src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/215/ALH_Odisej_deluxe_seaview_balcony_double_02-scaled-800x0.jpg" alt=""> -->
+                    <div class="card-text">
+                        <h2>Classic room</h2>
+                        <p>confortable rooms with impressive views</p>
+                    </div>
+                    <div class="btnn">
+                        <button>02</button>
+                    </div>
+                </div>
+                <div class="wrap-card">
+                    <!-- <img src="https://hotelodisej.com/wp-content/uploads/bf-advanced-images/560/Classic-room-2-480x0.jpeg" alt=""> -->
+                    <div class="card-text">
+                        <h2>Classic room</h2>
+                        <p>confortable rooms with impressive views</p>
+                    </div>
+                    <div class="btnn">
+                        <button>03</button>
+                    </div>
+                </div>
+                <div class="wrap-card">
+                    <div class="card-text">
+                        <h2>Classic room</h2>
+                        <p>confortable rooms with impressive views</p>
+                    </div>
+                    <div class="btnn">
+                        <button>04</button>
+                    </div>
+                </div>
+                <div class="wrap-card">
+                    <div class="card-text">
+                        <h2>Classic room</h2>
+                        <p>confortable rooms with impressive views</p>
+                    </div>
+                    <div class="btnn">
+                        <button>05</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- main ends -->
+    </div>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
