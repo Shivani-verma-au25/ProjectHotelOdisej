@@ -27,6 +27,7 @@ html,body{
     --text-color:#434b34;
     --btn-bg-color:#e3e3c4;
     --btn2-color:#f7f7ee;
+    --svg-color:#5b6647;
 }
 
 /* *********** Page1 *************** */
@@ -45,6 +46,7 @@ html,body{
     top: 50%;
     transform: translate(-50%,-50%);
 }
+
 nav{
     height: 18%;
     width: 100%;
@@ -133,20 +135,31 @@ nav{
 #page2{
     width: 100vw;
     height: 150vh;
-    background-color: var(--text-color);
     position: relative;
+    /* background-color: var(--svg-color); */
+    background-color:  #5b6647;
 }
 #center{
     width: 100%;
     height: 100%;
-    position: relative;
-    
+    position: relative; 
+}
+#center>#sg-1{
+    width: 100%;
+    height: 100%;
+}
+#sg-1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -14.5%;
+    left:0%;
 }
 #center>img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: bottom;
+    /* object-fit: cover; */
+    /* object-position: bottom; */
 }
 #text-container{
     width: 100%;
@@ -172,6 +185,37 @@ nav{
     /* color:#e3e3c4 */
 }
 
+#bottom-image{
+    width: 100%;
+    height: 92%;
+    background-color: var(--svg-color); 
+    position: relative;
+    top: 120%;
+}
+#bottom-image>#b-svg-1{
+    width: 200%;
+    height: 416%;
+    position: absolute;
+    bottom: 117%;
+    left: 1.3%;
+    z-index: 99999;
+    fill: var(--svg-color);   
+}
+#bottom-image>#b-svg-2{
+    width: 250%;
+    height: 420%;
+    position: absolute;
+    bottom: 115%;
+    left: 1.3%;
+    z-index: 9;
+    fill: #e3e3c4;   
+}
+#bottom-image:hover #b-svg-1{
+    translate: none; 
+    rotate: none; 
+    scale: none; 
+    transform: translate3d(-220.034px, 0px, 0px);
+}
 
 
 /* *********** Page3**************** */
@@ -180,6 +224,8 @@ nav{
     height: 150vh;
     background-color: var(--btn2-color);
     position: relative;
+    margin-top: 10vw;
+    /* margin-bottom: 10vw; */
 }
 #page3>#text-p-3{
     width: 100%;
@@ -195,7 +241,7 @@ nav{
     font-size: 5vw;
     width: 60%;
     line-height: 1;
-    padding-top: 5vw;
+    padding-top: 20vw;
     color: var(--btn-bg-color);
 }
 
@@ -206,6 +252,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 6vw;
 }
 #left{
     width: 50%;
@@ -287,10 +334,11 @@ nav{
 #page4{
     width: 100vw;
     height: 180vh;
-    background-color: palegoldenrod;
+    background-color: yellow;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .wrap-container{
     width: 85%;

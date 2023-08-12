@@ -172,6 +172,23 @@ function loco(){
     stagger:2
   })
   
+  // page 2 svg
+
+  let tl3 = gsap.timeline({
+    scrollTrigger:{
+      trigger:'#page2',
+      scroller:'#main',
+      start:'top 50%',
+      end:'140% 0%',
+      markers:true,
+      scrub:.15
+    }
+  })
+  tl3.to('#b-svg-1',{
+    Transform: `translateX(-50%)`,
+    duration:1
+  })
+
   
   
   // gsap.from('#image-container>#left, #image-container>#right',{
