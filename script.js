@@ -33,7 +33,6 @@ function loco(){
   loco()
   
   // gsap
-  
   let tl = gsap.timeline({
       scrollTrigger:{
         trigger:'#page1',
@@ -44,16 +43,6 @@ function loco(){
         // pin:true
       }
     })
-  //   ScrollTrigger:{
-      
-  //     trigger:'#page1',
-  //     scroller:'#main',
-  //     start:'top 40%',
-  //     end:'top top',
-  //     // markers:true,
-  //     scrub:.15
-  //   }
-  // })
   tl.to('nav>#n-2',{
     y:100,
     opacity:1,
@@ -74,7 +63,7 @@ function loco(){
   })
   
   
-  // page2
+// page2
   
   
   let tl1 = gsap.timeline({
@@ -103,7 +92,7 @@ function loco(){
   // page2 letters
   
   function textChange(){
-    let = clutter = ''
+    let clutter = ''
     document.querySelector('#text-container>h1').textContent.split('').forEach(function(item){
       clutter += `<span>${item}</span>`
     })
@@ -147,7 +136,7 @@ function loco(){
     color:'#434b34'
   })
   
-  
+
   // images
   let tl2 = gsap.timeline({
     scrollTrigger:{
@@ -158,7 +147,7 @@ function loco(){
       // markers:true,
       scrub:.15
     },
-    stagger:.1,
+    stagger:.15,
     opacity:0
   })
   tl2.from('#left',{
@@ -179,8 +168,8 @@ function loco(){
       trigger:'#page2',
       scroller:'#main',
       start:'top 50%',
-      end:'140% 0%',
-      markers:true,
+      end:'100% -60%',
+      // markers:true,
       scrub:.15
     }
   })
@@ -189,29 +178,36 @@ function loco(){
     duration:1
   })
 
+  // ********** Page 4*************
+
+  let tl4 = gsap.timeline({
+    scrollTrigger:{
+      trigger:'.wrap-container>.wrp',
+      scroller:'#main',
+      start:'top 50%',
+      end:'100% 100%',
+      // markers:true,
+      scrub:2
+    },
+    stagger:.15,
+
+  })
+  tl4.to('.content>.text,.content>.text>button',{
+    y:-20,
+    duration:1,
+    opacity:1
+  })
   
+
+  // nav button hovering effect
+
+  // let hoverbtn = document.querySelector('#n-3>#btn1')
+ 
+  // hoverbtn.addEventListener('mouseover',function(dets){
+  //   var contval = dets.target.textContent;
   
-  // gsap.from('#image-container>#left, #image-container>#right',{
-  //   scrollTrigger:{
-  //     trigger:'#image-container>#left',
-  //     scroller:'#main',
-  //     start:'top 80%',
-  //     end:'300% 0%',
-  //     // markers:true,
-  //     scrub:.15
-  //   },
-  //   stagger:.25,
-  //   y:200,
-  // },'anm')
-  // gsap.from('#image-container',{
-  //   scrollTrigger:{
-  //     trigger:'#image-container',
-  //     scroller:'#main',
-  //     start:'top 0%',
-  //     end:'100% 0%',
-  //     markers:true,
-  //     scrub:.15
-  //   },
-  //   stagger:.1,
-  //   y:200,
-  // },'anm')
+  //   hoverbtn.style.backgroundColor = `red`
+  //   hoverbtn.style.color = `transparent`
+  // })
+  
+
