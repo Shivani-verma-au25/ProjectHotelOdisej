@@ -199,15 +199,62 @@ function loco(){
   })
   
 
-  // nav button hovering effect
+//*************** nav ******************* */ 
 
-  // let hoverbtn = document.querySelector('#n-3>#btn1')
- 
-  // hoverbtn.addEventListener('mouseover',function(dets){
-  //   var contval = dets.target.textContent;
-  
-  //   hoverbtn.style.backgroundColor = `red`
-  //   hoverbtn.style.color = `transparent`
-  // })
-  
+// let navBar = document.querySelector('nav')
+// console.log(navBar);
 
+// gsap.to('nav ',{
+//   scrollTrigger:{
+//     trigger:'#page2',
+//     scroller:'#main',
+//     start:'top 0%',
+//     end:'top 30%',
+//     markers:true,
+//     scrub:.15
+//   },
+//   y:0,
+//   backgroundColor:'red',
+//   duration:1
+// })
+
+
+// let ltl2 = gsap.timeline({
+//   scrollTrigger:{
+//         trigger:'#page2',
+//         scroller:'#main',
+//         start:'top 0%',
+//         end:'10% 0%',
+//         // markers:true,
+//         scrub:.15
+//       },
+//       duration:1,
+//       opacity:0
+// })
+// ltl2.to('nav',{
+//   // y:-50,
+//   backgroundColor:'white',
+// },'an')
+ltl2.to('nav',{
+  y:-50,
+  backgroundColor:'white',
+  opacity:1
+},'an')
+
+
+  
+// 
+
+gsap.to('nav',{
+  scrollTrigger:{
+    trigger:'#page2',
+    scroller:'#main',
+    start:'10% 10%',
+    end:'30% 20%',
+    markers:true,
+    scrub:1
+  },
+  y:-50,
+  duration:1,
+  // opacity:0
+})
